@@ -3,9 +3,9 @@ import aboutImg from "../../assets/images/about.png";
 
 export default function About() {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className=" max-w-7xl mx-auto">
             <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
-                <div className="left sm:w-1/2">
+                <div className="p-5 sm:w-1/2">
                     <Image src={aboutImg} />
                 </div>
                 <div className="right sm:w-1/2">
