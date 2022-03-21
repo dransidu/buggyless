@@ -5,7 +5,7 @@ export default function Welcome() {
     return (
         <div className="max-w-7xl mx-auto">
             <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
-                <div className="left sm:w-5/12">
+                <div className="left sm:w-6/12">
                     <p className="text-center sm:text-left text-gray-600 text-base dark:text-slate-300">
                         Top Web and Mobile Apps Development Company
                     </p>
@@ -34,7 +34,7 @@ export default function Welcome() {
                         </a>
                     </div>
                 </div>
-                <div className="order-first sm:order-2 sm:w-7/12">
+                <div className="order-first sm:order-2 sm:w-6/12">
                     <Image src={WelcomeImg} />
                 </div>
             </div>
