@@ -1,14 +1,25 @@
 import Image from "next/image";
+import {
+    BadgeCheckIcon,
+    ViewGridIcon,
+} from "@heroicons/react/outline";
 import WelcomeImg from "../../assets/images/welcome.png";
 
 export default function Welcome() {
     return (
         <div className="max-w-7xl mx-auto">
             <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
-                <div className="left sm:w-6/12">
-                    <p className="text-center sm:text-left text-gray-600 text-base dark:text-slate-300">
-                        Top Web and Mobile Apps Development Company
-                    </p>
+                <div className="text-center sm:text-left sm:w-6/12 ">
+                    <div
+                        className="inline-flex justify-between items-center py-1 px-1 pr-5 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200"
+                    >
+                        <span class="text-xs bg-primary rounded-full text-white px-4 py-1.5 mr-3">
+                            <BadgeCheckIcon className="w-5 h-5" />
+                        </span>
+                        <span class="text-sm font-medium">
+                            Top Web and Mobile Apps Development Company
+                        </span>
+                    </div>
                     <p className="text-center sm:text-left text-gray-900 text-5xl sm:text-6xl font-extrabold mt-5 sm:leading-idleSize dark:text-gray-100">
                         Your Trusted <br></br> Development <br></br>Partner
                     </p>
@@ -19,18 +30,19 @@ export default function Welcome() {
                         Our design-focused approach and project execution
                         processes help you to deliver the right solutions.
                     </p>
-                    <div className="text-center sm:text-left">
+                    <div className="flex    -col mb-8 md:flex-row lg:justify-start">
                         <a
                             href="#"
-                            className="px-8 py-4 mr-5 bg-primary mt-5 font-medium text-white rounded-lg dark:shadow-md dark:shadow-primary dark:hover:shadow-lg dark:hover:shadow-primary"
+                            className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
                         >
                             What we do
                         </a>
                         <a
                             href="#"
-                            className="px-8 py-4 bg-blue-200 text-primary mt-5 font-medium font-bold rounded-lg dark:shadow-md dark:shadow-primary dark:hover:shadow-lg dark:hover:shadow-primary"
+                            className="text-gray-600 bg-white-100 hover:bg-gray-100 hover:text-blue-600 border border-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white border dark:border-gray-600 font-semibold rounded-xl text-base px-6 py-2.5 text-center inline-flex justify-center items-center"
                         >
-                            Our portfolio
+                            <ViewGridIcon className="mr-2 w-5 h-5" />
+                            Explore our works
                         </a>
                     </div>
                 </div>

@@ -31,7 +31,7 @@ export default function About() {
                     <div className="text-center sm:text-left mt-8">
                         <a
                             href="#"
-                            className="px-8 py-4 mr-5 bg-primary mt-5 font-medium text-white rounded-lg dark:shadow-md dark:shadow-primary dark:hover:shadow-lg dark:hover:shadow-primary"
+                            className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
                         >
                             What we do
                         </a>

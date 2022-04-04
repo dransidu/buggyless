@@ -56,7 +56,7 @@ export default function DevProcess() {
                         {features.map((feature) => (
                             <div key={feature.name} className="relative">
                                 <dt>
-                                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary dark:shadow-md dark:shadow-primary text-white">
+                                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-xl bg-primary text-white">
                                         <feature.icon
                                             className="h-6 w-6"
                                             aria-hidden="true"

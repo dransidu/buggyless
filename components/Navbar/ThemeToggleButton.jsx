@@ -18,7 +18,7 @@ export default function ThemeToggleButton() {
     };
 
     return (
-        <div className="theme">
+        <div className="theme flex">
             <button onClick={() => setMode()}>
                 {/* Change Toggle Icon */}
                 {theme == "dark" ? (
@@ -26,7 +26,7 @@ export default function ThemeToggleButton() {
                     <MoonIcon className="w-6 h-6 text-gray-100" />
                 ) : (
                     // when theme light
-                    <SunIcon className="w-6 h-6 " />
+                    <SunIcon className="w-6 h-6" />
                 )}
             </button>
         </div>
