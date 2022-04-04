@@ -19,7 +19,7 @@ export default function Welcome() {
                         <p className="text-center sm:text-left text-gray-900 text-5xl sm:text-6xl font-extrabold mt-5 sm:leading-idleSize dark:text-gray-100">
                             Your Trusted <br></br> Development <br></br>Partner
                         </p>
-                        <p className="text-center sm:text-left mt-5 mb-10 text-gray-600 dark:text-slate-300">
+                        <p className="text-center lg:pr-14 sm:text-left mt-5 mb-10 text-gray-600 dark:text-slate-300">
                             We deliver web and mobile app development services
                             to global businesses since 1998, with 100% project
                             delivery success. Hire the best programmers at
@@ -27,7 +27,7 @@ export default function Welcome() {
                             project execution processes help you to deliver the
                             right solutions.
                         </p>
-                        <div className="flex    -col mb-8 md:flex-row lg:justify-start">
+                        <div className="flex flex-col mb-8 md:flex-row lg:justify-start">
                             <a
                                 href="#"
                                 className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
