@@ -5,6 +5,7 @@ import DevProcess from "../components/DevProcess";
 import Gurantee from "../components/Gurantee";
 import Footer from "../components/Footer";
 import Newsletter from "../components/Newsletter";
+import Services from "../components/Services";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <Welcome />
             <About />
             <DevProcess />
+            <Services />
             <Gurantee />
             <Newsletter/>
             <Footer/>
