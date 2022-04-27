@@ -58,7 +58,7 @@ export default function Services() {
     <div className="py-12 bg-white dark:bg-gray-900 sm:pt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100 text-center">
-          Services
+          Our Services
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
           {servicesList.map((item) => {
