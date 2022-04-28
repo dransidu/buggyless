@@ -1,17 +1,10 @@
 import {
-  BookmarkAltIcon,
-  CalendarIcon,
   CursorClickIcon,
-  DesktopComputerIcon,
   DeviceMobileIcon,
   GlobeIcon,
-  MenuIcon,
-  PhoneIcon,
-  PlayIcon,
   ServerIcon,
   ShieldCheckIcon,
   SupportIcon,
-  XIcon,
 } from "@heroicons/react/outline";
 
 export default function Services() {
