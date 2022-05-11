@@ -156,10 +156,10 @@ export default function Navbar() {
                         >
                             About
                         </a><a
-                            href="#solutions"
+                            href="#services"
                             className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
                         >
-                            Solutions
+                            Services
                         </a>
                         {/*<Popover className="relative">*/}
                         {/*    {({open}) => (*/}
