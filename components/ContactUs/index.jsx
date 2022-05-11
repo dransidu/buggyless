@@ -13,8 +13,7 @@ export default function ContactUs() {
                             <h1 className="font-extrabold text-4xl dark:text-gray-100">Let's work together</h1>
                             <p className="mt-5 text-gray-500 dark:text-slate-300 mr-8">We're just one click away to help you
                                 take your brand or product from great to
-                                incredible. Fill in the form to share more details about your project. Or your favorite
-                                gum flavor. Either way, we’d love to talk.
+                                incredible. Fill in the form to share more details about your project. Either way, we’d love to talk.
                             </p>
                             <span className="flex flex-row pt-8">
                                 <PhoneIcon className="w-6 text-gray-500 dark:text-slate-300 mr-5"/>
