@@ -9,10 +9,10 @@ export default function Welcome() {
                 <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
                     <div className="text-center sm:text-left sm:w-6/12 ">
                         <div className="inline-flex justify-between items-center py-1 px-1 pr-5 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200">
-                            <span class="text-xs bg-primary rounded-full text-white px-4 py-1.5 mr-3">
+                            <span className="text-xs bg-primary rounded-full text-white px-4 py-1.5 mr-3">
                                 <BadgeCheckIcon className="w-5 h-5" />
                             </span>
-                            <span class="text-sm font-medium">
+                            <span className="text-sm font-medium">
                                 Top Web and Mobile Apps Development Company
                             </span>
                         </div>
@@ -44,7 +44,7 @@ export default function Welcome() {
                         </div>
                     </div>
                     <div className="order-first sm:order-2 sm:w-6/12">
-                        <Image src={WelcomeImg} />
+                        <Image src={WelcomeImg} alt="welcome image"/>
                     </div>
                 </div>
             </div>

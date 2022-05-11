@@ -119,9 +119,9 @@ export default function Navbar() {
                         <a href="#">
                             <span className="sr-only">Workflow</span>
                             {theme == "light" ? (
-                                <Image src={Logo}/>
+                                <Image src={Logo} alt="Buggyless logo"/>
                             ) : (
-                                <Image src={LogoDarkMode}/>
+                                <Image src={LogoDarkMode} alt="Buggyless logo"/>
                             )}
                         </a>
                     </div>
@@ -155,8 +155,8 @@ export default function Navbar() {
                             className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
                         >
                             About
-                        </a><a
-                            href="#services"
+                        </a>
+                        <a
                             className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
                         >
                             Services
@@ -300,9 +300,9 @@ export default function Navbar() {
                             <div className="flex items-center justify-between">
                                 <div>
                                     {theme == "light" ? (
-                                        <Image src={Logo}/>
+                                        <Image src={Logo} alt="Buggyless logo"/>
                                     ) : (
-                                        <Image src={LogoDarkMode}/>
+                                        <Image src={LogoDarkMode} alt="Buggyless logo"/>
                                     )}
                                 </div>
                                 <div className="-mr-2">

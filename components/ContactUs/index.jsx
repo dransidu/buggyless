@@ -10,8 +10,8 @@ export default function ContactUs() {
                 <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
                     <div className="p-5 sm:w-1/2">
                         <div className="">
-                            <h1 className="font-extrabold text-4xl dark:text-gray-100">Let's work together</h1>
-                            <p className="mt-5 text-gray-500 dark:text-slate-300 mr-8">We're just one click away to help you
+                            <h1 className="font-extrabold text-4xl dark:text-gray-100">Let{"'"}s work together</h1>
+                            <p className="mt-5 text-gray-500 dark:text-slate-300 mr-8">We{"'"}re just one click away to help you
                                 take your brand or product from great to
                                 incredible. Fill in the form to share more details about your project. Either way, we’d love to talk.
                             </p>
@@ -97,7 +97,7 @@ export default function ContactUs() {
                                 </div>
 
                                 <div className="col-span-6 sm:col-span-6">
-                                    <button className="w-full py-4 rounded-xl font-bold text-white bg-gray-900">Let's
+                                    <button className="w-full py-4 rounded-xl font-bold text-white bg-gray-900">Let{"'"}s
                                         tallk
                                     </button>
                                 </div>

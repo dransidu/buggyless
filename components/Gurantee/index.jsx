@@ -33,7 +33,7 @@ export default function Gurantee() {
                     </a>
                 </div>
                 <div className="sm:w-5/12">
-                    <Image src={gurantee} />
+                    <Image src={gurantee} alt="Buggyless guarantee"/>
                 </div>
             </div>
         </div>

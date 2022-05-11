@@ -16,12 +16,12 @@ export default function Footer() {
                             <a href="#">
                                 <span className="sr-only">Workflow</span>
                                 {theme == "light" ? (
-                                    <Image src={Logo} />
+                                    <Image src={Logo} alt="Buggyless logo"/>
                                 ) : (
-                                    <Image src={LogoDarkMode} />
+                                    <Image src={LogoDarkMode} alt="Buggyless logo"/>
                                 )}
                             </a>
-                            <p class="text-gray-600 text-base dark:text-gray-400">
+                            <p className="text-gray-600 text-base dark:text-gray-400">
                                 Buggyless is a top web design agency and
                                 software development company with a large pool
                                 of software developers available for dedicated
@@ -29,7 +29,7 @@ export default function Footer() {
                             </p>
                         </div>
                         <div className="resources">
-                            <span class="text-base font-semibold text-gray-600 uppercase dark:text-white">
+                            <span className="text-base font-semibold text-gray-600 uppercase dark:text-white">
                                 Resouces
                             </span>
                             <ul>
@@ -72,7 +72,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="resources">
-                            <span class="mb-6 text-base font-semibold text-gray-600 uppercase dark:text-white">
+                            <span className="mb-6 text-base font-semibold text-gray-600 uppercase dark:text-white">
                                 HELP & SUPPORT
                             </span>
                             <ul>
@@ -97,7 +97,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="resources">
-                            <span class="mb-6 text-base font-semibold text-gray-600 uppercase dark:text-white">
+                            <span className="mb-6 text-base font-semibold text-gray-600 uppercase dark:text-white">
                                 FOLLOW US
                             </span>
                             <ul>
@@ -122,7 +122,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="resources">
-                            <span class="mb-6 text-base font-semibold text-gray-600 uppercase dark:text-white">
+                            <span className="mb-6 text-base font-semibold text-gray-600 uppercase dark:text-white">
                                 LEGAL
                             </span>
                             <ul>
@@ -147,8 +147,8 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12" />
-                    <span class="block text-center text-gray-600 dark:text-slate-400 text-base">
+                    <hr className="my-8 border-gray-200 dark:border-gray-700 lg:my-12" />
+                    <span className="block text-center text-gray-600 dark:text-slate-400 text-base">
                         © 2019 - 2022
                         <a href="#"> Buggyless</a>. All Rights Reserved.
                     </span>

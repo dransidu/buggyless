@@ -54,9 +54,9 @@ export default function Services() {
                     Our Services
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
-                    {servicesList.map((item) => {
+                    {servicesList.map((item,index) => {
                         return (
-                            <div className="flex flex-col items-center rounded-lg p-10 dark:bg-gray-800 shadow-lg ">
+                            <div key={index} className="flex flex-col items-center rounded-lg p-10 dark:bg-gray-800 shadow-lg ">
                                 <div
                                     className="flex justify-center items-center h-16 w-16 rounded-full bg-blue-100 dark:bg-primary">
                                     <item.icon
