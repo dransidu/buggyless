@@ -1,11 +1,10 @@
-import { useContext } from "react";
 import Image from "next/image";
 import Logo from "../../assets/images/logo.png";
 import LogoDarkMode from "../../assets/images/logo_darkmode.png";
-import ThemeContext from "../../contexts/ThemeContext";
+import { useTheme } from "next-themes";
 
 export default function Footer() {
-    const { theme } = useContext(ThemeContext);
+    const { theme } = useTheme();
 
     return (
         <div className="bg-white dark:bg-gray-800">
@@ -15,11 +14,12 @@ export default function Footer() {
                         <div className="col-span-2 md:col-span-2">
                             <a href="#">
                                 <span className="sr-only">Workflow</span>
-                                {theme == "light" ? (
+                                <span className="block dark:hidden">
                                     <Image src={Logo} alt="Buggyless logo"/>
-                                ) : (
-                                    <Image src={LogoDarkMode} alt="Buggyless logo"/>
-                                )}
+                                 </span>
+                                <span className="hidden dark:block">
+                                    <Image src={LogoDarkMode}  alt="Buggyless logo"/>
+                                </span>
                             </a>
                             <p className="text-gray-600 text-base dark:text-gray-400">
                                 Buggyless is a top web design agency and
