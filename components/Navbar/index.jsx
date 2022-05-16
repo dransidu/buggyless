@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import {Fragment, useContext} from "react";
+import {Fragment} from "react";
 import {Popover, Transition} from "@headlessui/react";
 import {
     BookmarkAltIcon,
@@ -21,9 +21,8 @@ import Image from "next/image";
 import Link from "next/link"
 import Logo from "../../assets/images/logo.png";
 import LogoDarkMode from "../../assets/images/logo_darkmode.png";
-import LogoIcon from "../../assets/images/logo_icon.png";
 import ThemeToggleButton from "./ThemeToggleButton";
-import ThemeContext from "../../contexts/ThemeContext";
+import { useTheme } from "next-themes";
 
 const solutions = [
     {
@@ -109,7 +108,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-    const {theme} = useContext(ThemeContext);
+    const {theme} = useTheme();
 
     return (
         <Popover className="fixed bg-white  dark:bg-gray-900 sticky top-0 z-40 ">
@@ -117,12 +116,13 @@ export default function Navbar() {
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#">
-                            <span className="sr-only">Workflow</span>
-                            {theme == "light" ? (
+                            <span className="sr-only">Buggyless</span>
+                            <span className="block dark:hidden">
                                 <Image src={Logo} alt="Buggyless logo"/>
-                            ) : (
-                                <Image src={LogoDarkMode} alt="Buggyless logo"/>
-                            )}
+                            </span>
+                            <span className="hidden dark:block">
+                                <Image src={LogoDarkMode}  alt="Buggyless logo"/>
+                            </span>
                         </a>
                     </div>
 
@@ -299,11 +299,13 @@ export default function Navbar() {
                         <div className="pt-5 pb-6 px-5">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    {theme == "light" ? (
+                                    <span className="sr-only">Buggyless</span>
+                                    <span className="block dark:hidden">
                                         <Image src={Logo} alt="Buggyless logo"/>
-                                    ) : (
-                                        <Image src={LogoDarkMode} alt="Buggyless logo"/>
-                                    )}
+                                    </span>
+                                    <span className="hidden dark:block">
+                                        <Image src={LogoDarkMode}  alt="Buggyless logo"/>
+                                    </span>
                                 </div>
                                 <div className="-mr-2">
                                     <Popover.Button

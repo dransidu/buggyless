@@ -1,34 +1,38 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 import { useState, useEffect, useContext } from "react";
-import ThemeContext from "../../contexts/ThemeContext";
+import { useTheme } from "next-themes";
 
 export default function ThemeToggleButton() {
-    const { theme, setTheme } = useContext(ThemeContext);
+    const [mounted, setMounted] = useState(false)
+    const {systemTheme, theme, setTheme} = useTheme()
 
     useEffect(() => {
-        // Adding and remove dark class in main body tag
-        theme == "dark"
-            ? document.body.parentElement.classList.add("dark")
-            : document.body.parentElement.classList.remove("dark");
-    });
+        console.log(systemTheme)
+        console.log(theme)
+        // setTheme(systemTheme)
+        setMounted(true)
+    },[]);
 
     const setMode = () => {
-        // Change ThemeContext
-        setTheme(theme == "dark" ? "light" : "dark");
+        if (!mounted) return null;
+
+        const currentTheme = theme == "system" ? systemTheme : theme;
+        // setTheme(theme == "system" ? systemTheme : theme)
+        if (currentTheme == "dark") {
+            return (
+                <SunIcon className="w-6 h-6 text-gray-100" role="button" onClick={() => setTheme("light")}/>
+            )
+        } else {
+            return (
+                <MoonIcon className="w-6 h-6 " role="button" onClick={() => setTheme("dark")}/>
+            )
+        }
+
     };
 
     return (
         <div className="theme flex">
-            <button onClick={() => setMode()}>
-                {/* Change Toggle Icon */}
-                {theme == "dark" ? (
-                    // When theme dark
-                    <MoonIcon className="w-6 h-6 text-gray-100" />
-                ) : (
-                    // when theme light
-                    <SunIcon className="w-6 h-6" />
-                )}
-            </button>
+            {setMode()}
         </div>
     );
 }
