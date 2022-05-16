@@ -39,7 +39,7 @@ export default function ContactUs() {
                                         id="first-name"
                                         autoComplete="given-name"
                                         placeholder="John"
-                                        className="mt-1 px-4 py-3 focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
+                                        className="mt-1 px-4 py-3 bg-white focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
                                     />
                                 </div>
                                 <div className="col-span-6 sm:col-span-3">
@@ -52,7 +52,7 @@ export default function ContactUs() {
                                         id="first-name"
                                         autoComplete="given-name"
                                         placeholder="Smith"
-                                        className="mt-1 px-4 py-3 focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
+                                        className="mt-1 px-4 py-3 bg-white focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
                                     />
                                 </div>
                                 <div className="col-span-6 sm:col-span-6">
@@ -65,7 +65,7 @@ export default function ContactUs() {
                                         id="first-name"
                                         autoComplete="given-name"
                                         placeholder="For web development"
-                                        className="mt-1 px-4 py-3 focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
+                                        className="mt-1 px-4 py-3 bg-white focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
                                     />
                                 </div>
                                 <div className="col-span-6 sm:col-span-6">
@@ -78,7 +78,7 @@ export default function ContactUs() {
                                         id="first-name"
                                         autoComplete="given-name"
                                         placeholder="john@mail.com"
-                                        className="mt-1 px-4 py-3 focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
+                                        className="mt-1 px-4 py-3 bg-white focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
                                     />
                                 </div>
                                 <div className="col-span-6 sm:col-span-6">
@@ -92,7 +92,7 @@ export default function ContactUs() {
                                         autoComplete="given-name"
                                         placeholder="Leave your massege"
                                         rows="5"
-                                        className="mt-1 px-4 py-3 focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
+                                        className="mt-1 px-4 py-3 bg-white focus:outline-none focus:border focus:border-1 focus:ring focus:ring-1 focus:ring-primary focus:border-primary w-full shadow-sm sm:text-sm border border-gray-300 rounded-xl"
                                     />
                                 </div>
 
