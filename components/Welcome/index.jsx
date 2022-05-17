@@ -4,7 +4,7 @@ import WelcomeImg from "../../assets/images/welcome.png";
 
 export default function Welcome() {
     return (
-        <div className="dark:bg-gray-900">
+        <div className="dark:bg-gray-900" id="home">
             <div className="max-w-7xl mx-auto dark:bg-gray-900">
                 <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
                     <div className="text-center sm:text-left sm:w-6/12 ">
@@ -21,7 +21,7 @@ export default function Welcome() {
                         </p>
                         <p className="text-center lg:pr-14 sm:text-left mt-5 mb-10 text-gray-600 dark:text-slate-300">
                             We deliver web and mobile app development services
-                            to global businesses since 1998, with 100% project
+                            to global businesses since 2020, with 100% project
                             delivery success. Hire the best programmers at
                             affordable prices. Our design-focused approach and
                             project execution processes help you to deliver the
@@ -30,7 +30,7 @@ export default function Welcome() {
                         <div className="flex flex-col mb-8 md:flex-row lg:justify-start">
                             <a
                                 href="#"
-                                className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
+                                className="text-white font-bold bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
                             >
                                 What we do
                             </a>
@@ -44,7 +44,7 @@ export default function Welcome() {
                         </div>
                     </div>
                     <div className="order-first sm:order-2 sm:w-6/12">
-                        <Image src={WelcomeImg} alt="welcome image"/>
+                        <Image src={WelcomeImg} alt="welcome image" />
                     </div>
                 </div>
             </div>

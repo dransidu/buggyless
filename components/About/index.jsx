@@ -3,11 +3,11 @@ import aboutImg from "../../assets/images/about.png";
 
 export default function About() {
     return (
-        <div className="dark:bg-gray-900">
+        <div className="dark:bg-gray-900" id="about">
             <div className=" max-w-7xl mx-auto">
                 <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
                     <div className="p-5 sm:w-1/2">
-                        <Image src={aboutImg} alt="Buggyless Aboutus"/>
+                        <Image src={aboutImg} alt="Buggyless Aboutus" />
                     </div>
                     <div className="right sm:w-1/2">
                         <h1 className="font-extrabold text-4xl dark:text-gray-100">
@@ -27,13 +27,13 @@ export default function About() {
                             <br /> Our Android app, iOS app and cross-platform
                             mobile app developers are adroit in the latest
                             mobile technologies and tools like Android Studio,
-                            Xcode, Java, React Native, etc. to build next-gen
-                            mobile applications.
+                            Xcode, Java, Flutter, React Native, etc. to build
+                            next-gen mobile applications.
                         </p>
                         <div className="text-center sm:text-left mt-8">
                             <a
                                 href="#"
-                                className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
+                                className="text-white font-bold bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
                             >
                                 What we do
                             </a>
