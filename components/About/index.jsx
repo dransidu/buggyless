@@ -3,7 +3,7 @@ import aboutImg from "../../assets/images/about.png";
 
 export default function About() {
     return (
-        <div className="dark:bg-gray-900">
+        <div className="dark:bg-gray-900" id="about">
             <div className=" max-w-7xl mx-auto">
                 <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
                     <div className="p-5 sm:w-1/2">
@@ -33,7 +33,7 @@ export default function About() {
                         <div className="text-center sm:text-left mt-8">
                             <a
                                 href="#"
-                                className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
+                                className="text-white font-bold bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
                             >
                                 What we do
                             </a>
