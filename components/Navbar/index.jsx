@@ -172,7 +172,7 @@ export default function Navbar() {
                             to="services"
                             spy={true}
                             smooth={true}
-                            offset={-50}
+                            offset={-80}
                             duration={500}
                             delay={100}
                             className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
