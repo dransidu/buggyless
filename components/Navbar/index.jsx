@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
-import {Fragment} from "react";
-import {Popover, Transition} from "@headlessui/react";
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
 import {
     BookmarkAltIcon,
     CalendarIcon,
@@ -16,13 +16,14 @@ import {
     SupportIcon,
     XIcon,
 } from "@heroicons/react/outline";
-import {ChevronDownIcon} from "@heroicons/react/solid";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 import Logo from "../../assets/images/logo.png";
 import LogoDarkMode from "../../assets/images/logo_darkmode.png";
 import ThemeToggleButton from "./ThemeToggleButton";
 import { useTheme } from "next-themes";
+import * as Scroll from "react-scroll";
 
 const solutions = [
     {
@@ -61,8 +62,8 @@ const solutions = [
     },
 ];
 const callsToAction = [
-    {name: "Watch Demo", href: "#", icon: PlayIcon},
-    {name: "Contact Sales", href: "#", icon: PhoneIcon},
+    { name: "Watch Demo", href: "#", icon: PlayIcon },
+    { name: "Contact Sales", href: "#", icon: PhoneIcon },
 ];
 const resources = [
     {
@@ -94,13 +95,13 @@ const resources = [
     },
 ];
 const recentPosts = [
-    {id: 1, name: "Boost your conversion rate", href: "#"},
+    { id: 1, name: "Boost your conversion rate", href: "#" },
     {
         id: 2,
         name: "How to use search engine optimization to drive traffic to your site",
         href: "#",
     },
-    {id: 3, name: "Improve your customer experience", href: "#"},
+    { id: 3, name: "Improve your customer experience", href: "#" },
 ];
 
 function classNames(...classes) {
@@ -108,7 +109,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-    const {theme} = useTheme();
+    const { theme } = useTheme();
 
     return (
         <Popover className="fixed bg-white  dark:bg-gray-900 sticky top-0 z-40 ">
@@ -118,20 +119,22 @@ export default function Navbar() {
                         <a href="#">
                             <span className="sr-only">Buggyless</span>
                             <span className="block dark:hidden">
-                                <Image src={Logo} alt="Buggyless logo"/>
+                                <Image src={Logo} alt="Buggyless logo" />
                             </span>
                             <span className="hidden dark:block">
-                                <Image src={LogoDarkMode}  alt="Buggyless logo"/>
+                                <Image
+                                    src={LogoDarkMode}
+                                    alt="Buggyless logo"
+                                />
                             </span>
                         </a>
                     </div>
 
                     <div className="flex flex-row items-center -mr-2 -my-2 md:hidden">
                         <a href="#" className="mr-5">
-                            <ThemeToggleButton/>
+                            <ThemeToggleButton />
                         </a>
-                        <Popover.Button
-                            className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-gray-800 ">
+                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-gray-800 ">
                             <span className="sr-only">Open menu</span>
                             <MenuIcon
                                 className="h-6 w-6 dark:text-gray-100"
@@ -143,24 +146,39 @@ export default function Navbar() {
                         as="nav"
                         className="hidden md:flex space-x-10"
                     >
-                        <Link href="/">
-                            <a
-                                className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
-                            >
-                                Home
-                            </a>
-                        </Link>
-                        <a
-                            href="#"
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
+                        <Scroll.Link
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            delay={100}
+                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
+                        >
+                            Home
+                        </Scroll.Link>
+                        <Scroll.Link
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            delay={100}
+                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             About
-                        </a>
-                        <a
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
+                        </Scroll.Link>
+                        <Scroll.Link
+                            to="services"
+                            spy={true}
+                            smooth={true}
+                            offset={-50}
+                            duration={500}
+                            delay={100}
+                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             Services
-                        </a>
+                        </Scroll.Link>
                         {/*<Popover className="relative">*/}
                         {/*    {({open}) => (*/}
                         {/*        <>*/}
@@ -269,14 +287,19 @@ export default function Navbar() {
                             href="#"
                             className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 "
                         >
-                            <ThemeToggleButton/>
+                            <ThemeToggleButton />
                         </a>
-                        <a
-                            href="#contactus"
-                            className="ml-8 text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center"
+                        <Scroll.Link
+                            to="contactus"
+                            spy={true}
+                            smooth={true}
+                            offset={-50}
+                            duration={500}
+                            delay={100}
+                            className="ml-8 text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center cursor-pointer"
                         >
                             Contact us
-                        </a>
+                        </Scroll.Link>
                     </div>
                 </div>
             </div>
@@ -294,22 +317,26 @@ export default function Navbar() {
                     focus
                     className="absolute z-40 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
                 >
-                    <div
-                        className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:bg-gray-800">
+                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:bg-gray-800">
                         <div className="pt-5 pb-6 px-5">
                             <div className="flex items-center justify-between">
                                 <div>
                                     <span className="sr-only">Buggyless</span>
                                     <span className="block dark:hidden">
-                                        <Image src={Logo} alt="Buggyless logo"/>
+                                        <Image
+                                            src={Logo}
+                                            alt="Buggyless logo"
+                                        />
                                     </span>
                                     <span className="hidden dark:block">
-                                        <Image src={LogoDarkMode}  alt="Buggyless logo"/>
+                                        <Image
+                                            src={LogoDarkMode}
+                                            alt="Buggyless logo"
+                                        />
                                     </span>
                                 </div>
                                 <div className="-mr-2">
-                                    <Popover.Button
-                                        className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-gray-900 dark:text-gray-100">
+                                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-gray-900 dark:text-gray-100">
                                         <span className="sr-only">
                                             Close menu
                                         </span>
@@ -332,8 +359,7 @@ export default function Navbar() {
                                                 className="flex-shrink-0 h-6 w-6 text-primary"
                                                 aria-hidden="true"
                                             />
-                                            <span
-                                                className="ml-3 text-base font-medium text-gray-900 dark:text-gray-100">
+                                            <span className="ml-3 text-base font-medium text-gray-900 dark:text-gray-100">
                                                 {item.name}
                                             </span>
                                         </a>
