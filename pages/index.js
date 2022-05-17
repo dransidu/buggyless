@@ -15,7 +15,7 @@ export default function Home() {
             <Head>
                 <title>Welcome to buggyless!</title>
                 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-                <meta name="Description" content="Buggyless is a top web design agency and software development company with a large pool of software developers available for dedicated and fixed time/cost projects." />
+                <meta name="Description" content="Buggyless is Srilanka's leading digital solutions company. We value quality, creativity and problem-solving to grow your business. Our specialized services answer your most demanding requirements with precision and innovative solutions that deliver relentless growth to your brand." />
             </Head>
             <Navbar />
             <Welcome />
