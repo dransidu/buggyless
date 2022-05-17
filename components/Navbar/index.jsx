@@ -24,7 +24,6 @@ import Image from "next/image";
 import Logo from "../../assets/images/logo.png";
 import LogoDarkMode from "../../assets/images/logo_darkmode.png";
 import ThemeToggleButton from "./ThemeToggleButton";
-import { useTheme } from "next-themes";
 import * as Scroll from "react-scroll";
 
 const solutions = [
@@ -176,7 +175,7 @@ export default function Navbar() {
                             offset={-100}
                             duration={500}
                             delay={100}
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             Home
                         </Scroll.Link>
@@ -187,7 +186,7 @@ export default function Navbar() {
                             offset={-100}
                             duration={500}
                             delay={100}
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             About
                         </Scroll.Link>
@@ -198,7 +197,7 @@ export default function Navbar() {
                             offset={-80}
                             duration={500}
                             delay={100}
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             Services
                         </Scroll.Link>
@@ -300,7 +299,7 @@ export default function Navbar() {
 
                         <a
                             href="#"
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100"
                         >
                             Technology
                         </a>
@@ -308,7 +307,7 @@ export default function Navbar() {
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 ">
                         <a
                             href="#"
-                            className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 "
+                            className="whitespace-nowrap text-base font-medium text-gray-700 hover:text-gray-900 "
                         >
                             <ThemeToggleButton />
                         </a>
