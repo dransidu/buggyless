@@ -133,10 +133,9 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-    const { theme } = useTheme();
 
     return (
-        <Popover className="fixed bg-white  dark:bg-gray-900 sticky top-0 z-40 ">
+        <Popover className="fixed bg-white bg-opacity-80 backdrop-blur-md dark:bg-gray-900 dark:bg-opacity-80 dark:backdrop-blur-md sticky top-0 z-40 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
