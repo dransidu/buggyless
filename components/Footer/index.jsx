@@ -15,17 +15,23 @@ export default function Footer() {
                             <a href="#">
                                 <span className="sr-only">Workflow</span>
                                 <span className="block dark:hidden">
-                                    <Image src={Logo} alt="Buggyless logo"/>
-                                 </span>
+                                    <Image src={Logo} alt="Buggyless logo" />
+                                </span>
                                 <span className="hidden dark:block">
-                                    <Image src={LogoDarkMode}  alt="Buggyless logo"/>
+                                    <Image
+                                        src={LogoDarkMode}
+                                        alt="Buggyless logo"
+                                    />
                                 </span>
                             </a>
-                            <p className="text-gray-600 text-base dark:text-gray-400">
-                                Buggyless is a top web design agency and
-                                software development company with a large pool
-                                of software developers available for dedicated
-                                and fixed time/cost projects.
+                            <p className="text-gray-600 text-base mt-4 dark:text-gray-400">
+                                Buggyless is a Srilankan{"'"}s leading digital
+                                solutions company. We value quality, creativity
+                                and problem-solving to grow your business. Our
+                                specialized services answer your most demanding
+                                requirements with precision and innovative
+                                solutions that deliver relentless growth to your
+                                brand.
                             </p>
                         </div>
                         <div className="resources">
