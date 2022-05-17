@@ -15,10 +15,12 @@ import {
     ShieldCheckIcon,
     SupportIcon,
     XIcon,
+    HomeIcon,
+    ViewGridIcon,
+    ChipIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import Image from "next/image";
-import Link from "next/link";
 import Logo from "../../assets/images/logo.png";
 import LogoDarkMode from "../../assets/images/logo_darkmode.png";
 import ThemeToggleButton from "./ThemeToggleButton";
@@ -59,6 +61,28 @@ const solutions = [
             "Connect with third-party tools that you're already using.",
         href: "#",
         icon: ServerIcon,
+    },
+];
+const mobileNav = [
+    {
+        name: "Home",
+        href: "home",
+        icon: HomeIcon,
+    },
+    {
+        name: "About",
+        href: "about",
+        icon: SupportIcon,
+    },
+    {
+        name: "Services",
+        href: "services",
+        icon: ViewGridIcon,
+    },
+    {
+        name: "Technology",
+        href: "#",
+        icon: ChipIcon,
     },
 ];
 const callsToAction = [
@@ -349,11 +373,16 @@ export default function Navbar() {
                             </div>
                             <div className="mt-6">
                                 <nav className="grid gap-y-8">
-                                    {solutions.map((item) => (
-                                        <a
+                                    {mobileNav.map((item) => (
+                                        <Scroll.Link
                                             key={item.name}
-                                            href={item.href}
-                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-900"
+                                            to={item.href}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-80}
+                                            duration={500}
+                                            delay={100}
+                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-900 cursor-pointor"
                                         >
                                             <item.icon
                                                 className="flex-shrink-0 h-6 w-6 text-primary"
@@ -362,7 +391,7 @@ export default function Navbar() {
                                             <span className="ml-3 text-base font-medium text-gray-900 dark:text-gray-100">
                                                 {item.name}
                                             </span>
-                                        </a>
+                                        </Scroll.Link>
                                     ))}
                                 </nav>
                             </div>
@@ -393,12 +422,17 @@ export default function Navbar() {
                                 ))}
                             </div> */}
                             <div>
-                                <a
-                                    href="#"
-                                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary dark:shadow-md dark:shadow-primary"
+                                <Scroll.Link
+                                    to="contactus"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-80}
+                                    duration={500}
+                                    delay={100}
+                                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary dark:shadow-md cursor-pointer"
                                 >
                                     Contact us
-                                </a>
+                                </Scroll.Link>
                                 {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
                                     Existing customer?{" "}
                                     <a
