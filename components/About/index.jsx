@@ -12,7 +12,7 @@ export default function About() {
                     </div>
                     <div className="right sm:w-1/2">
                         <h1 className="font-extrabold text-4xl dark:text-gray-100">
-                            A little about us
+                            A Little About Us
                         </h1>
                         <p className="mt-5 text-gray-500 dark:text-slate-300">
                             We are a young team of Designers and Developers who

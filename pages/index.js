@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import Newsletter from "../components/Newsletter";
 import Services from "../components/Services";
 import ContactUs from "../components/ContactUs";
+import Techstack from "../components/Techstack";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
             <About />
             <DevProcess />
             <Services />
+            <Techstack />
             <ContactUs />
             <Gurantee />
             <Newsletter />

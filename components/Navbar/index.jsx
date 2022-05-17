@@ -24,7 +24,6 @@ import Image from "next/image";
 import Logo from "../../assets/images/logo.png";
 import LogoDarkMode from "../../assets/images/logo_darkmode.png";
 import ThemeToggleButton from "./ThemeToggleButton";
-import { useTheme } from "next-themes";
 import * as Scroll from "react-scroll";
 
 const solutions = [
@@ -133,10 +132,8 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-    const { theme } = useTheme();
-
     return (
-        <Popover className="fixed bg-white  dark:bg-gray-900 sticky top-0 z-40 ">
+        <Popover className="fixed bg-white bg-opacity-80 backdrop-blur-md dark:bg-gray-900 dark:bg-opacity-80 dark:backdrop-blur-md sticky top-0 z-40 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -177,7 +174,7 @@ export default function Navbar() {
                             offset={-100}
                             duration={500}
                             delay={100}
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             Home
                         </Scroll.Link>
@@ -188,7 +185,7 @@ export default function Navbar() {
                             offset={-100}
                             duration={500}
                             delay={100}
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             About
                         </Scroll.Link>
@@ -199,7 +196,7 @@ export default function Navbar() {
                             offset={-80}
                             duration={500}
                             delay={100}
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             Services
                         </Scroll.Link>
@@ -299,17 +296,22 @@ export default function Navbar() {
                         {/*    )}*/}
                         {/*</Popover>*/}
 
-                        <a
-                            href="#"
-                            className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
+                        <Scroll.Link
+                            to="techstack"
+                            spy={true}
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            delay={100}
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             Technology
-                        </a>
+                        </Scroll.Link>
                     </Popover.Group>
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 ">
                         <a
                             href="#"
-                            className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 "
+                            className="whitespace-nowrap text-base font-medium text-gray-700 hover:text-gray-900 "
                         >
                             <ThemeToggleButton />
                         </a>
