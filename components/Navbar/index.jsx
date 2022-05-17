@@ -132,7 +132,6 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-
     return (
         <Popover className="fixed bg-white bg-opacity-80 backdrop-blur-md dark:bg-gray-900 dark:bg-opacity-80 dark:backdrop-blur-md sticky top-0 z-40 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
@@ -297,12 +296,17 @@ export default function Navbar() {
                         {/*    )}*/}
                         {/*</Popover>*/}
 
-                        <a
-                            href="#"
-                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100"
+                        <Scroll.Link
+                            to="techstack"
+                            spy={true}
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            delay={100}
+                            className="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer"
                         >
                             Technology
-                        </a>
+                        </Scroll.Link>
                     </Popover.Group>
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 ">
                         <a
