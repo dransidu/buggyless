@@ -109,9 +109,14 @@ export default function Techstack() {
                                 <div className="flex flex-col text-center ">
                                     <div className="bg-gray-50 rounded-lg m-5 py-8  dark:bg-gray-800 shadow shadow-sm">
                                         <div className="mb-2 ">
-                                            <Image src={item.image} />
+                                            <Image
+                                                src={item.image}
+                                                alt={item.name}
+                                            />
                                         </div>
-                                        <span className="">{item.name}</span>
+                                        <span className="text-base">
+                                            {item.name}
+                                        </span>
                                     </div>
                                 </div>
                             );
