@@ -106,7 +106,10 @@ export default function Techstack() {
                     <Slider {...settings} className="mt-10">
                         {technologies.map((item) => {
                             return (
-                                <div className="flex flex-col text-center" key={item.id}>
+                                <div
+                                    className="flex flex-col text-center"
+                                    key={item.id}
+                                >
                                     <div className="bg-gray-50 rounded-lg m-5 py-8  dark:bg-gray-800 shadow shadow-sm">
                                         <div className="mb-2 ">
                                             <Image
