@@ -48,7 +48,10 @@ export default function Services() {
     ];
 
     return (
-        <div id="services" className="py-20 bg-white dark:bg-gray-900 sm:pt-10">
+        <div
+            id="services"
+            className="py-20 bg-gray-100 dark:bg-gray-900 sm:pt-10"
+        >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100 text-center">
                     Our Services
@@ -58,7 +61,7 @@ export default function Services() {
                         return (
                             <div
                                 key={index}
-                                className="flex flex-col items-center rounded-lg p-10 dark:bg-gray-800 shadow-lg "
+                                className="flex flex-col items-center rounded-lg p-10 bg-white dark:bg-gray-800 shadow-lg "
                             >
                                 <div className="flex justify-center items-center h-16 w-16 rounded-full bg-blue-100 dark:bg-primary">
                                     <item.icon
