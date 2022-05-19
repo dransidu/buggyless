@@ -9,6 +9,8 @@ import Newsletter from "../components/Newsletter";
 import Services from "../components/Services";
 import ContactUs from "../components/ContactUs";
 import Techstack from "../components/Techstack";
+import WhyChooseUs from "../components/WhyChooseUs";
+import FeedBack from "../components/FeedBack";
 
 export default function Home() {
     return (
@@ -24,6 +26,8 @@ export default function Home() {
             <DevProcess />
             <Services />
             <Techstack />
+            <WhyChooseUs />
+            <FeedBack />
             <ContactUs />
             <Gurantee />
             <Newsletter />
