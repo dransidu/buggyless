@@ -1,6 +1,6 @@
 import Image from "next/image";
 import aboutImg from "../../assets/images/about.png";
-import DeveloperImg from "../../assets/images/developer.png";
+import DedicateImg from "../../assets/images/dedicate.png";
 
 export default function About() {
     return (
@@ -40,23 +40,22 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className=" max-w-7xl mx-auto">
-                <div className="flex flex-col sm:flex sm:flex-row p-6 items-center">
-                    <div className="sm:w-1/2">
+            <div className="max-w-7xl mx-auto">
+                <div className="flex flex-col sm:flex sm:flex-row p-6 content-between items-center ">
+                    <div className="sm:w-1/2 ">
                         <h1 className="font-extrabold text-4xl dark:text-gray-100">
                             Hire the Best Web and Mobile App Developers
                         </h1>
                         <p className="mt-5 text-gray-500 dark:text-slate-300">
                             Buggyless is a top web design agency and software
-                            development company with a best software
-                            developers available for dedicated and fixed
-                            time/cost projects. Hire web developers from
-                            Buggyless who have proven expertise in trending web
-                            technologies like Javascript, Typescript, NextJS,
-                            front-end technologies like ReactJS and back-end
-                            technologies like Node.js to develop custom and
-                            responsive websites, web apps and eCommerce
-                            solutions. <br />
+                            development company with a best software developers
+                            available for dedicated and fixed time/cost
+                            projects. Hire web developers from Buggyless who
+                            have proven expertise in trending web technologies
+                            like Javascript, Typescript, NextJS, front-end
+                            technologies like ReactJS and back-end technologies
+                            like Node.js to develop custom and responsive
+                            websites, web apps and eCommerce solutions. <br />
                             <br /> Our Android app, iOS app and cross-platform
                             mobile app developers are adroit in the latest
                             mobile technologies and tools like Android Studio,
@@ -72,8 +71,8 @@ export default function About() {
                             </a>
                         </div> */}
                     </div>
-                    <div className="p-5 sm:w-1/2">
-                        <Image src={DeveloperImg} alt="Developer" />
+                    <div className="sm:w-1/2 flex justify-end mt-8 md:mt-0">
+                        <Image src={DedicateImg} alt="Developer" />
                     </div>
                 </div>
             </div>
