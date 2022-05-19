@@ -51,13 +51,7 @@ export default function FeedBack() {
         cssEase: "linear",
         nextArrow: <NextArrow />,
         prevArrow: <PreviousArrow />,
-        appendDots: (dots) => (
-            <div>
-                <ul style={{ margin: "0px" }}>
-                    <span>{dots}</span>
-                </ul>
-            </div>
-        ),
+
         responsive: [
             {
                 breakpoint: 1024,
