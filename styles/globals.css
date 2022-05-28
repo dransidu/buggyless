@@ -8,3 +8,15 @@ body {
     font-family: "Inter", sans-serif;
     @apply dark:bg-gray-800;
 }
+
+.slick-dots {
+    @apply flex flex-row items-center;
+}
+
+.slick-dots li button::before {
+    @apply text-transparent opacity-100 text-lg rounded-full border border-2 border-gray-100 dark:border-gray-800;
+}
+
+.slick-dots .slick-active button::before {
+    @apply text-white dark:text-gray-800 text-2xl opacity-100 border-none rounded-full leading-none !important;
+}
