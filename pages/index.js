@@ -14,26 +14,29 @@ import FeedBack from "../components/FeedBack";
 import OurTeam from "../components/OurTeam";
 
 export default function Home() {
-    return (
-        <div>
-            <Head>
-                <title>Welcome to buggyless!</title>
-                <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-                <meta name="Description" content="Buggyless is Srilanka's leading digital solutions company. We value quality, creativity and problem-solving to grow your business. Our specialized services answer your most demanding requirements with precision and innovative solutions that deliver relentless growth to your brand." />
-            </Head>
-            <Navbar />
-            <Welcome />
-            <About />
-            <DevProcess />
-            <Services />
-            <Techstack />
-            <WhyChooseUs />
-            <FeedBack />
-            <OurTeam />
-            <ContactUs />
-            <Gurantee />
-            <Newsletter />
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Head>
+        <title>Welcome to buggyless!</title>
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <meta
+          name="Description"
+          content="Buggyless is Srilanka's leading digital solutions company. We value quality, creativity and problem-solving to grow your business. Our specialized services answer your most demanding requirements with precision and innovative solutions that deliver relentless growth to your brand."
+        />
+      </Head>
+      <Navbar />
+      <Welcome />
+      <About />
+      <DevProcess />
+      <Services />
+      <Techstack />
+      <WhyChooseUs />
+      <FeedBack />
+      {/* <OurTeam /> */}
+      <ContactUs />
+      <Gurantee />
+      <Newsletter />
+      <Footer />
+    </div>
+  );
 }
